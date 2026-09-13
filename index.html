@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omar's HTML Glossary</title>
   </head>
   <body>
@@ -198,8 +198,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>freeCodeCamp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <title>Site title</title>
   </head>
   <body>
     <!--Headings, paragraphs, images, etc. go inside here-->
@@ -285,7 +286,7 @@
         <dl>
           <dt><b>Replaced Element</b></dt>
           <dd>A replaced element is an element whose content is determined by an external resource rather than by CSS itself. An example would be an <b>iframe element</b>. Iframe stands for inline frame. It's an inline element used to embed other HTML content directly within the HTML page. You can include the allowfullscreen attribute which allows the user to display the iframe in full screen mode. To embed a video within an iframe you can copy it directly from popular video services like YouTube and Vimeo, or define it yourself with the src attribute pointing to the URL of that video. Here is the syntax of an iframe element:
-<br><textarea style="width: 850px; height: 150px">
+<br><textarea style="width: 850px; height: 200px">
 <iframe
   width="560"
   height="315"
@@ -451,8 +452,135 @@ public/index.html
       <section id="semantic-html-elements">
         <h2>Semantic HTML Elements</h2>
         <dl>
-          <dt><b>Lorem Ipsum</b></dt>
-          <dd>Placeholder text used in design and publishing to show how a layout looks without real content getting in the way.</dd>
+          <dt><b>Header Element</b></dt>
+          <dd>Used to define the header of a document or section.
+<br><textarea style="width: 300px; height: 150px">
+<header>
+  <h1>CatPhotoApp</h1>
+  <p>Welcome to our cat gallery.</p>
+</header>
+</textarea></dd>
+          <dt><b>Main Element</b></dt>
+          <dd>Used to contain the main content of the web page.
+<br><textarea style="width: 300px; height: 150px">
+<main>
+  <section>
+    <h2>Cat Photos</h2>
+    <p>Browse adorable cat pictures.</p>
+  </section>
+</main>
+</textarea></dd>
+            <dt><b>Section Element</b></dt>
+          <dd>Used to divide up content into smaller sections.
+<br><textarea style="width: 300px; height: 150px">
+<section>
+  <h2>About Me</h2>
+  <p>Hi, I am Jane Doe and I am a web developer.</p>
+</section>
+</textarea></dd>
+            <dt><b>Navigation Section Element</b></dt>
+          <dd>Represents a section with navigation links.
+<br><textarea style="width: 300px; height: 150px">
+<nav>
+  <ul>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#videos">Videos</a></li>
+  </ul>
+</nav>
+</textarea></dd>
+          <dt><b>Article Element</b></dt>
+          <dd>Used to represent self-contained, independent content that can stand alone, such as a blog post or news article.
+<br><textarea style="width: 300px; height: 150px">
+<article>
+  <h2>My First Blog Post</h2>
+  <p>This is the content of my first blog post.</p>
+</article>
+</textarea></dd>
+            <dt><b>Figure Element</b></dt>
+          <dd>Used to contain illustrations and diagrams.
+<br><textarea style="width: 300px; height: 150px">
+<figure>
+  <img
+    src="img-url"
+    alt="Image description"
+  />
+  <figcaption>Image caption</figcaption>
+</figure>
+</textarea></dd>
+            <dt><b>Emphasis Element</b></dt>
+          <dd>Marks text that has stress emphasis.
+<br><textarea style="width: 300px; height: 150px">
+<p>
+  Never give up on <em>your</em> dreams.
+</p>
+</textarea></dd>
+            <dt><b>Idiomatic Text Element</b></dt>
+          <dd>Used for highlighting alternative voice or mood, idiomatic terms from another language, technical terms, and thoughts.
+<br><textarea style="width: 300px; height: 150px">
+<p>
+  There is a certain <i lang="fr">je ne sais quoi</i> in the air.
+</p>
+</textarea>
+<br>The lang attribute inside the open i tag is used to specify the language of the content. In this case, the language would be French. The i element does not indicate if the text is important or not, it only shows that it's somehow different from the surrounding text.</dd>
+          <dt><b>Choosing CSS over i/em</b></dt>
+          <dd>Since <b>i</b> and <b>em</b> carry meaning, text that only needs to look italic for presentation purposes should be styled with CSS instead.</dd>
+          <dt><b>Strong Importance Element</b></dt>
+          <dd>Marks text that has strong importance.
+<br><textarea style="width: 300px; height: 150px">
+<p>
+  <strong>Warning:</strong> This product may cause allergic reactions.
+</p>
+</textarea></dd>
+            <dt><b>Bring Attention To Element</b></dt>
+          <dd>Used to bring attention to text that is not important for the meaning of the content. It's commonly used to highlight keywords in summaries or product names in reviews.
+<br><textarea style="width: 300px; height: 200px">
+<p>
+  We tested several products, including the <b>SuperSound 3000</b> for audio quality, the <b>QuickCharge Pro</b> for fast charging, and the <b>Ecoclean Vacuum</b> for cleaning. The first two performed well, but the <b>Ecoclean Vacuum</b> did not meet expectations.
+</p>
+</textarea></dd>
+            <dt><b>Description List Element</b></dt>
+          <dd>Used to represent a list of term-description groupings.
+<br><textarea style="width: 300px; height: 150px">
+<dl>
+  
+</dl>
+</textarea></dd>
+            <dt><b>Description Term Element</b></dt>
+          <dd>Used to represent the term being defined.
+<br><textarea style="width: 300px; height: 150px">
+<dl>
+  <dt>Term</dt>
+</dl>
+</textarea></dd>
+            <dt><b>Description Details Element</b></dt>
+          <dd>Used to represent the description of the term.
+<br><textarea style="width: 300px; height: 150px">
+<dl>
+  <dt>Term</dt>
+  <dd>Term description</dd>
+</dl>
+</textarea></dd>
+            <dt><b>Block Quotation Element</b></dt>
+          <dd>Used to represent a section that is quoted from another source. This element has a cite attribute. The value of the cite attribute is the URL of the source.
+<br><textarea style="width: 300px; height: 150px">
+<blockquote cite="citation-source">
+  "Can you imagine what it would be like to be a successful developer? To have built software systems that people rely upon?"
+</blockquote>
+</textarea></dd>
+            <dt><b>Description List Element</b></dt>
+          <dd>Used to represent a list of term-description groupings.
+<br><textarea style="width: 300px; height: 150px">
+<p>
+  Never give up on <em>your</em> dreams.
+</p>
+</textarea></dd>
+            <dt><b>Description List Element</b></dt>
+          <dd>Used to represent a list of term-description groupings.
+<br><textarea style="width: 300px; height: 150px">
+<p>
+  Never give up on <em>your</em> dreams.
+</p>
+</textarea></dd>
         </dl>
       </section>
       
